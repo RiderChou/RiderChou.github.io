@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+  
+  <title>Typora的简单使用教程 | Hexo</title>
+  
+  <meta name="author" content="John Doe" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="这是Typora的简单使用教程.  markdown的使用说明  一、标题 语法：# (一级标题)  ## (二级标题)  ### (三级标题) … 代码： 12# 这是一级标题## 这是二级标题 效果:  这是一级标题  这是二级标题 快捷键:  ctrl + 数字1~6可以快速将选中的文本调成对应级别的标题 ctrl + 0可以快速将选中的文本调成普通文本 ctrl + 加号&#x2F;减号 对标题级别">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora的简单使用教程">
+<meta property="og:url" content="http://example.com/2023/10/21/Typora/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="这是Typora的简单使用教程.  markdown的使用说明  一、标题 语法：# (一级标题)  ## (二级标题)  ### (三级标题) … 代码： 12# 这是一级标题## 这是二级标题 效果:  这是一级标题  这是二级标题 快捷键:  ctrl + 数字1~6可以快速将选中的文本调成对应级别的标题 ctrl + 0可以快速将选中的文本调成普通文本 ctrl + 加号&#x2F;减号 对标题级别">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-10-21T14:49:21.247Z">
+<meta property="article:modified_time" content="2023-10-22T12:39:51.394Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Hexo</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Hexo</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/21/Typora/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Typora的简单使用教程</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2023-10-21T14:49:21.247Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-10-21</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">John Doe</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            ~3.35K
+                        
+                        字
+                    </li>
+                
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1697978391394"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><p>这是Typora的简单使用教程.</p>
+<h1 id="markdown的使用说明"><a class="markdownIt-Anchor" href="#markdown的使用说明"></a> markdown的使用说明</h1>
+<h2 id="一-标题"><a class="markdownIt-Anchor" href="#一-标题"></a> 一、标题</h2>
+<p>语法：# (一级标题)  ## (二级标题)  ### (三级标题) …</p>
+<p>代码：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 这是一级标题</span><br><span class="line">## 这是二级标题</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<h1 id="这是一级标题"><a class="markdownIt-Anchor" href="#这是一级标题"></a> 这是一级标题</h1>
+<h2 id="这是二级标题"><a class="markdownIt-Anchor" href="#这是二级标题"></a> 这是二级标题</h2>
+<p>快捷键:</p>
+<ul>
+<li>ctrl + 数字1~6可以快速将选中的文本调成对应级别的标题</li>
+<li>ctrl + 0可以快速将选中的文本调成普通文本</li>
+<li>ctrl + 加号/减号 对标题级别进行加减</li>
+</ul>
+<h2 id="二-段落"><a class="markdownIt-Anchor" href="#二-段落"></a> 二、段落</h2>
+<h3 id="1-换行"><a class="markdownIt-Anchor" href="#1-换行"></a> 1、换行</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这是一个段落</span><br><span class="line">这是一个段落</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p>这是一个段落</p>
+<p>这是一个段落</p>
+<h3 id="2-分割线"><a class="markdownIt-Anchor" href="#2-分割线"></a> 2、分割线</h3>
+<p>语法: — 或者 ***</p>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---  或者  ***</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<hr>
+<h2 id="三-文字显示"><a class="markdownIt-Anchor" href="#三-文字显示"></a> 三、文字显示</h2>
+<h3 id="1-字体"><a class="markdownIt-Anchor" href="#1-字体"></a> 1、字体</h3>
+<p>语法:</p>
+<ul>
+<li>粗体:  用一对双星号包裹</li>
+<li>删除线:  用一对双波浪线包裹 <s>内</s></li>
+<li>下划线:  用一对u标签包裹</li>
+<li>斜体:  用一对单星号包裹</li>
+<li>高亮:  用一对双等号包裹</li>
+</ul>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">**这是粗体**</span><br><span class="line">~~这是删除线~~</span><br><span class="line">&lt;u&gt;这是下划线&lt;/u&gt;</span><br><span class="line">*这是斜体*</span><br><span class="line">==这是高亮==</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><strong>这是粗体</strong></p>
+<p><s>这是删除线</s></p>
+<p><u>这是下划线</u></p>
+<p><em>这是斜体</em></p>
+<p><mark>这是高亮</mark></p>
+<p>快捷键:</p>
+<ul>
+<li>加粗:  ctrl + B</li>
+<li>删除线:  shift + alt + 5</li>
+<li>下划线:  ctrl + U</li>
+<li>斜体:  ctrl + I (i的大写)</li>
+</ul>
+<h3 id="2-上下标"><a class="markdownIt-Anchor" href="#2-上下标"></a> 2、上下标</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x^2^</span><br><span class="line">H~2~O</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p>x<sup>2</sup></p>
+<p>H<sub>2</sub>O</p>
+<h2 id="四-列表"><a class="markdownIt-Anchor" href="#四-列表"></a> 四、列表</h2>
+<h3 id="1-无序列表"><a class="markdownIt-Anchor" href="#1-无序列表"></a> 1、无序列表</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*  或  -  或  +</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p>1.只有同一级别:</p>
+<ul>
+<li>苹果</li>
+<li>香蕉</li>
+<li>橘子</li>
+</ul>
+<p>2.子集类:</p>
+<ul>
+<li>一级分类
+<ul>
+<li>二级分类
+<ul>
+<li>三级分类</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>快捷键:  ctrl + shift + ]</p>
+<h3 id="2-有序列表"><a class="markdownIt-Anchor" href="#2-有序列表"></a> 2、有序列表</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">数字 + . + 空格</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<ol>
+<li>第一个标题</li>
+<li>第二个标题</li>
+<li>第三个标题
+<ul>
+<li>子内容1
+<ul>
+<li>子内容2</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>第四个标题</li>
+</ol>
+<p>快捷键:  ctrl + shift + [</p>
+<h3 id="3-任务列表"><a class="markdownIt-Anchor" href="#3-任务列表"></a> 3、任务列表</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- [ ] 吃早饭</span><br><span class="line">- [X] 背单词</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<ul>
+<li>
+<p>[ ] 吃早餐</p>
+</li>
+<li>
+<p>[x] 背单词</p>
+</li>
+</ul>
+<h2 id="五-区块显示"><a class="markdownIt-Anchor" href="#五-区块显示"></a> 五、区块显示</h2>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<blockquote>
+<p>这是最外层</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>这是内层区块</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是最内层区块</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="六-代码显示"><a class="markdownIt-Anchor" href="#六-代码显示"></a> 六、代码显示</h2>
+<h3 id="1-行内代码"><a class="markdownIt-Anchor" href="#1-行内代码"></a> 1、行内代码</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`int a = 0;`    `代码内容`</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><code>int a = 0;</code></p>
+<p>快捷键:  ctrl + shift  + `</p>
+<h3 id="2-代码块"><a class="markdownIt-Anchor" href="#2-代码块"></a> 2、代码块</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```内容```</span><br></pre></td></tr></table></figure>
+<p>快捷键:  ctrl + shift + K</p>
+<h2 id="七-链接"><a class="markdownIt-Anchor" href="#七-链接"></a> 七、链接</h2>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">www.baidu.com</span><br><span class="line">[百度一下](https://www.baidu.com)</span><br><span class="line">[百度一下](https://www.baidu.com &quot;https://www.baidu.com&quot;)</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><a target="_blank" rel="noopener" href="http://www.baidu.com">www.baidu.com</a><br>
+<a target="_blank" rel="noopener" href="https://www.baidu.com">百度一下</a><br>
+<a target="_blank" rel="noopener" href="https://www.baidu.com" title="https://www.baidu.com">百度一下</a></p>
+<p>快捷键:  ctrl + K</p>
+<h2 id="八-脚注"><a class="markdownIt-Anchor" href="#八-脚注"></a> 八、脚注</h2>
+<blockquote>
+<p>说明:  对文本进行解释说明</p>
+</blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[^文本]  使用:你的内容[^文本]</span><br><span class="line">[^文本]:解释说明</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p>这是一个非常牛逼的故事<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<h2 id="九-图片插入"><a class="markdownIt-Anchor" href="#九-图片插入"></a> 九、图片插入</h2>
+<p>代码:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![不显示的文字](图片路径 &quot;图片标题&quot;)</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><img src alt></p>
+<p>快捷键:  ctrl + shift + I (i的大写)</p>
+<h2 id="十-表格"><a class="markdownIt-Anchor" href="#十-表格"></a> 十、表格</h2>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|      |      |      |</span><br><span class="line">| ---- | ---- | ---- |</span><br><span class="line">|      |      |      |</span><br><span class="line">|      |      |      |</span><br><span class="line">|      |      |      |</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">9</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">12</td>
+</tr>
+</tbody>
+</table>
+<p>快捷键:  ctrl + T</p>
+<h2 id="十一-表情符号"><a class="markdownIt-Anchor" href="#十一-表情符号"></a> 十一、表情符号</h2>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:happy:     :cry:      :man:</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p>:happy:	   😢       👨</p>
+<h2 id="十二-数学公式的输入"><a class="markdownIt-Anchor" href="#十二-数学公式的输入"></a> 十二、数学公式的输入</h2>
+<h3 id="1-公式的插入"><a class="markdownIt-Anchor" href="#1-公式的插入"></a> 1、公式的插入</h3>
+<h4 id="1行中公式"><a class="markdownIt-Anchor" href="#1行中公式"></a> ①行中公式</h4>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$公式$</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">公</mi><mi mathvariant="normal">式</mi></mrow><annotation encoding="application/x-tex">公式</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord cjk_fallback">公</span><span class="mord cjk_fallback">式</span></span></span></span></p>
+<h4 id="2独立公式"><a class="markdownIt-Anchor" href="#2独立公式"></a> ②独立公式</h4>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">公式</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">公</mi><mi mathvariant="normal">式</mi></mrow><annotation encoding="application/x-tex">公式
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord cjk_fallback">公</span><span class="mord cjk_fallback">式</span></span></span></span></span></p>
+<h3 id="2-上下标-2"><a class="markdownIt-Anchor" href="#2-上下标-2"></a> 2、上下标</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$x^&#123;y^z&#125;=(1+e^x)^&#123;-2xy^w&#125;$</span><br><span class="line">$\sideset&#123;^1_2&#125;&#123;^3_4&#125;&#123;\underset&#123;6&#125;\bigotimes&#125;$</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><msup><mi>y</mi><mi>z</mi></msup></msup><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mn>2</mn><mi>x</mi><msup><mi>y</mi><mi>w</mi></msup></mrow></msup></mrow><annotation encoding="application/x-tex">x^{y^z}=(1+e^x)^{-2xy^w}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.87998em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.87998em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7385428571428572em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight" style="margin-right:0.04398em;">z</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.12998em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.87998em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">2</span><span class="mord mathdefault mtight">x</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7385428571428572em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02691em;">w</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br>
+\sideset{^1_2}{^3_4}{\underset{6}\bigotimes}</p>
+<h3 id="3-括号和分隔符"><a class="markdownIt-Anchor" href="#3-括号和分隔符"></a> 3、括号和分隔符</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$\langle\quad\rangle\quad\lceil\quad\rceil\quad\lfloor\quad\rfloor\quad\lbrace\quad\rbrace\quad\lVert\quad\rVert$</span><br><span class="line">$f(x,y,z)=3y^2z\left(3+\dfrac&#123;7x+5&#125;&#123;1+y^2&#125;\right)$</span><br><span class="line">$\left.\dfrac&#123;\mathrm&#123;d&#125;u&#125;&#123;\mathrm&#123;d&#125;x&#125;\right|_&#123;x=0&#125;$</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">⟨</mo><mspace width="1em"><mo stretchy="false">⟩</mo><mspace width="1em"><mo stretchy="false">⌈</mo><mspace width="1em"><mo stretchy="false">⌉</mo><mspace width="1em"><mo stretchy="false">⌊</mo><mspace width="1em"><mo stretchy="false">⌋</mo><mspace width="1em"><mo stretchy="false">{</mo><mspace width="1em"><mo stretchy="false">}</mo><mspace width="1em"><mo stretchy="false">∥</mo><mspace width="1em"><mo stretchy="false">∥</mo></mspace></mspace></mspace></mspace></mspace></mspace></mspace></mspace></mspace></mrow><annotation encoding="application/x-tex">\langle\quad\rangle\quad\lceil\quad\rceil\quad\lfloor\quad\rfloor\quad\lbrace\quad\rbrace\quad\lVert\quad\rVert</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">⟨</span><span class="mspace" style="margin-right:1em;"></span><span class="mclose">⟩</span><span class="mspace" style="margin-right:1em;"></span><span class="mopen">⌈</span><span class="mspace" style="margin-right:1em;"></span><span class="mclose">⌉</span><span class="mspace" style="margin-right:1em;"></span><span class="mopen">⌊</span><span class="mspace" style="margin-right:1em;"></span><span class="mclose">⌋</span><span class="mspace" style="margin-right:1em;"></span><span class="mopen">{</span><span class="mspace" style="margin-right:1em;"></span><span class="mclose">}</span><span class="mspace" style="margin-right:1em;"></span><span class="mopen">∥</span><span class="mspace" style="margin-right:1em;"></span><span class="mclose">∥</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><msup><mi>y</mi><mn>2</mn></msup><mi>z</mi><mrow><mo fence="true">(</mo><mn>3</mn><mo>+</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mn>7</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x,y,z)=3y^2z\left(3+\dfrac{7x+5}{1+y^2}\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="mord">3</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">7</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">5</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mi mathvariant="normal">d</mi><mi>u</mi></mrow><mrow><mi mathvariant="normal">d</mi><mi>x</mi></mrow></mfrac></mstyle><mo fence="true">∣</mo></mrow><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\left.\dfrac{\mathrm{d}u}{\mathrm{d}x}\right|_{x=0}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4737em;vertical-align:-0.9997199999999998em;"></span><span class="minner"><span class="minner"><span class="mopen nulldelimiter"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">d</span></span><span class="mord mathdefault">x</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">d</span></span><span class="mord mathdefault">u</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.47398em;"><span style="top:-1.65598em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.26198em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.86798em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.47398em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9500199999999999em;"><span></span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.5486119999999999em;"><span style="top:-1.7002800000000002em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9997199999999998em;"><span></span></span></span></span></span></span></span></span></span></p>
+<h3 id="4-分数"><a class="markdownIt-Anchor" href="#4-分数"></a> 4、分数</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\frac&#123;a&#125;&#123;b&#125;\quad\dfrac&#123;a&#125;&#123;b&#125;\quad &#123;a\over b&#125;$</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mspace width="1em"><mstyle displaystyle="true" scriptlevel="0"><mfrac><mi>a</mi><mi>b</mi></mfrac></mstyle><mspace width="1em"><mfrac><mi>a</mi><mi>b</mi></mfrac></mspace></mspace></mrow><annotation encoding="application/x-tex">\frac{a}{b}\quad\dfrac{a}{b}\quad {a\over b}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.7935600000000003em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:1em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">b</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:1em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<h3 id="5-开方"><a class="markdownIt-Anchor" href="#5-开方"></a> 5、开方</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\sqrt[根指数,省略时为2]&#123;被开方数&#125;$</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mroot><mrow><mi mathvariant="normal">被</mi><mi mathvariant="normal">开</mi><mi mathvariant="normal">方</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">根</mi><mi mathvariant="normal">指</mi><mi mathvariant="normal">数</mi><mo separator="true">,</mo><mi mathvariant="normal">省</mi><mi mathvariant="normal">略</mi><mi mathvariant="normal">时</mi><mi mathvariant="normal">为</mi><mn>2</mn></mrow></mroot></mrow><annotation encoding="application/x-tex">\sqrt[根指数,省略时为2]{被开方数}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.2395em;"></span><span class="mord sqrt"><span class="root"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.65882em;"><span style="top:-2.8366000000000002em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size6 size1 mtight"><span class="mord mtight"><span class="mord cjk_fallback mtight">根</span><span class="mord cjk_fallback mtight">指</span><span class="mord cjk_fallback mtight">数</span><span class="mpunct mtight">,</span><span class="mord cjk_fallback mtight">省</span><span class="mord cjk_fallback mtight">略</span><span class="mord cjk_fallback mtight">时</span><span class="mord cjk_fallback mtight">为</span><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8005em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord cjk_fallback">被</span><span class="mord cjk_fallback">开</span><span class="mord cjk_fallback">方</span><span class="mord cjk_fallback">数</span></span></span><span style="top:-2.7605em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width="400em" height="1.08em" viewbox="0 0 400000 1080" preserveaspectratio="xMinYMin slice"><path d="M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+-10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
+-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
+35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
+-221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
+s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
+s-65,47,-65,47z M834 80H400000v40H845z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2395em;"><span></span></span></span></span></span></span></span></span></p>
+<h3 id="6-省略号"><a class="markdownIt-Anchor" href="#6-省略号"></a> 6、省略号</h3>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\cdots\quad\ldots\quad\vdots\quad\ddots$</span><br></pre></td></tr></table></figure>
+<p>效果:</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⋯</mo><mspace width="1em"><mo>…</mo><mspace width="1em"><mi mathvariant="normal">⋮</mi><mpadded height="+0em" voffset="0em"><mspace mathbackground="black" width="0em" height="1.5em"></mspace></mpadded><mspace width="1em"><mo>⋱</mo></mspace></mspace></mspace></mrow><annotation encoding="application/x-tex">\cdots\quad\ldots\quad\vdots\quad\ddots</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.53em;vertical-align:-0.03em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:1em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:1em;"></span><span class="mord"><span class="mord">⋮</span><span class="mord rule" style="border-right-width:0em;border-top-width:1.5em;bottom:0em;"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:1em;"></span><span class="minner">⋱</span></span></span></span></p>
+<h2 id="十三-支持的html元素"><a class="markdownIt-Anchor" href="#十三-支持的html元素"></a> 十三、支持的HTML元素</h2>
+<h3 id="1-文本居中"><a class="markdownIt-Anchor" href="#1-文本居中"></a> 1、文本居中</h3>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&lt;center&gt;内容&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<center>内容</center>
+</blockquote>
+<h3 id="2-快捷键显示"><a class="markdownIt-Anchor" href="#2-快捷键显示"></a> 2、快捷键显示</h3>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&lt;kbd&gt;内容&lt;/kbd&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>
+<kbd>内容</kbd></p>
+</blockquote>
+<h3 id="3-加粗"><a class="markdownIt-Anchor" href="#3-加粗"></a> 3、加粗</h3>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&lt;b&gt;加粗&lt;/b&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<p><b>加粗</b></p>
+</blockquote>
+<h3 id="4-倾斜"><a class="markdownIt-Anchor" href="#4-倾斜"></a> 4、倾斜</h3>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&lt;i&gt;倾斜&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>
+<i>倾斜</i></p>
+</blockquote>
+<h3 id="5-上下标"><a class="markdownIt-Anchor" href="#5-上下标"></a> 5、上下标</h3>
+<blockquote>
+<p>代码:</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;开始&lt;sup&gt;123hi你好&lt;/sup&gt;</span><br><span class="line">&gt;开始&lt;sub&gt;321hi你好&lt;/sub&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:<br>
+开始<sup>123hi你好</sup><br>
+开始<sub>321hi你好</sub></p>
+</blockquote>
+<h3 id="6-填充的黑色箭头"><a class="markdownIt-Anchor" href="#6-填充的黑色箭头"></a> 6、填充的黑色箭头</h3>
+<blockquote>
+<p>代码：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp;#x27A4;&amp;#x27A4;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>效果:</p>
+<p>➤</p>
+</blockquote>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>天道酬勤 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "http://example.com/2023/10/21/Typora/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "http://example.com/2023/10/21/Typora/";
+            const title         = "「Typora的简单使用教程」";
+            const excerpt       = `这是Typora的简单使用教程.
+ markdown的使用说明
+ 一、标题
+语法：# (一级标题)  ## (二级标题)  ### (三级标题) …
+代码：
+12# 这是一级标题## 这是二级标题
+效果:
+ 这是一级标题
+ 这是二级标...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    
+                </div>
+                <div class="pull-date">
+                    <time datetime="2023-10-22T12:39:51.394Z" itemprop="dateModified">最后编辑：2023-10-22</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" Hello World" href="/2023/10/20/hello-world/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" Hexo更换MarkDown渲染器" href="/2023/10/22/Hexo更换MarkDown渲染器/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                7
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+
+            
+                
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/27/%E7%A7%BB%E5%8A%A8Web%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/"><i class="fa  fa-book"></i> 移动Web网页开发</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/23/%E8%A7%A3%E5%86%B3Hexo%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E6%A1%88/"><i class="fa  fa-book"></i> 解决Hexo无法显示图片的方案</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/"><i class="fa  fa-book"></i> 基于Flutter3.x实战跨平台短视频App混合开发</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/22/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"><i class="fa  fa-book"></i> 个人博客的搭建</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/22/Hexo%E6%9B%B4%E6%8D%A2MarkDown%E6%B8%B2%E6%9F%93%E5%99%A8/"><i class="fa  fa-book"></i> Hexo更换MarkDown渲染器</a>
+            
+          
+        
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2023 Hexo 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by John Doe.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="3204190542"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>

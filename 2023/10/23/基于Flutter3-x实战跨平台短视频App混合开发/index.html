@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  
+  
+  <title>基于Flutter3.x实战跨平台短视频App混合开发 | Hexo</title>
+  
+  <meta name="author" content="John Doe" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="基于Flutter3.x实战跨平台短视频App混合开发  第一章 Flutter整体介绍  1.Flutter技术发展概述  什么是Flutter  由Google研发 一款应用程序SDK 一份代码可以同时生成IOS和Android&#x2F;Mac&#x2F;Windows等多个高性能，高保真的应用程序。   为什么要用  极大提升开发效率 创建美观，高度定制且统一的用户体验 性能接近Native   怎么用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于Flutter3.x实战跨平台短视频App混合开发">
+<meta property="og:url" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基于Flutter3.x实战跨平台短视频App混合开发  第一章 Flutter整体介绍  1.Flutter技术发展概述  什么是Flutter  由Google研发 一款应用程序SDK 一份代码可以同时生成IOS和Android&#x2F;Mac&#x2F;Windows等多个高性能，高保真的应用程序。   为什么要用  极大提升开发效率 创建美观，高度定制且统一的用户体验 性能接近Native   怎么用">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/Flutter.png">
+<meta property="og:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/Dart%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B.png">
+<meta property="og:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/Dart%E7%BA%BF%E7%A8%8B%E7%AE%A1%E7%90%86.png">
+<meta property="og:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E7%BA%BF%E7%A8%8B1.png">
+<meta property="og:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E7%BA%BF%E7%A8%8B2.png">
+<meta property="og:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E5%B7%A5%E7%A8%8B%E7%BB%93%E6%9E%84.png">
+<meta property="og:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F%E5%8F%8A%E5%B7%AE%E5%BC%82.png">
+<meta property="og:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/widget.png">
+<meta property="og:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png">
+<meta property="article:published_time" content="2023-10-23T14:19:39.898Z">
+<meta property="article:modified_time" content="2023-10-24T04:05:28.222Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/Flutter.png">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Hexo</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Hexo</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">基于Flutter3.x实战跨平台短视频App混合开发</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2023-10-23T14:19:39.898Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-10-23</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">John Doe</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            ~2.26K
+                        
+                        字
+                    </li>
+                
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1698120328222"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><h1 id="基于flutter3x实战跨平台短视频app混合开发"><a class="markdownIt-Anchor" href="#基于flutter3x实战跨平台短视频app混合开发"></a> 基于Flutter3.x实战跨平台短视频App混合开发</h1>
+<h2 id="第一章-flutter整体介绍"><a class="markdownIt-Anchor" href="#第一章-flutter整体介绍"></a> 第一章 Flutter整体介绍</h2>
+<h3 id="1flutter技术发展概述"><a class="markdownIt-Anchor" href="#1flutter技术发展概述"></a> 1.Flutter技术发展概述</h3>
+<h4 id="什么是flutter"><a class="markdownIt-Anchor" href="#什么是flutter"></a> 什么是Flutter</h4>
+<ul>
+<li>由Google研发</li>
+<li>一款应用程序SDK</li>
+<li>一份代码可以同时生成IOS和Android/Mac/Windows等多个高性能，高保真的应用程序。</li>
+</ul>
+<h4 id="为什么要用"><a class="markdownIt-Anchor" href="#为什么要用"></a> 为什么要用</h4>
+<ul>
+<li>极大提升开发效率</li>
+<li>创建美观，高度定制且统一的用户体验</li>
+<li>性能接近Native</li>
+</ul>
+<h4 id="怎么用"><a class="markdownIt-Anchor" href="#怎么用"></a> 怎么用</h4>
+<ul>
+<li>原生App + Flutter plugin</li>
+<li>Flutte App</li>
+<li>Flutter App + 原生接口</li>
+</ul>
+<h4 id="核心原则"><a class="markdownIt-Anchor" href="#核心原则"></a> 核心原则</h4>
+<ul>
+<li>Everything is widget</li>
+<li>StatelessWidget</li>
+<li>StatefulWidget</li>
+</ul>
+<h3 id="2flutter整体框架结构"><a class="markdownIt-Anchor" href="#2flutter整体框架结构"></a> 2.Flutter整体框架结构</h3>
+<p>​	<img src="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/Flutter.png" alt="Dart线程管理"></p>
+<h3 id="3为什么选择dart语言"><a class="markdownIt-Anchor" href="#3为什么选择dart语言"></a> 3.为什么选择Dart语言</h3>
+<ul>
+<li>2011年发布，目的是取代JavaScript</li>
+<li>符合Flutter构建UI的方式。第一个使用声明式UI。</li>
+<li>支持JIT(Just In Time)和AOT(Ahead Of Time)</li>
+<li>有内存安全保证，降低了安全漏洞风险。</li>
+<li>面向对象的编程语言(类似Java/OC；不同于JavaScript)</li>
+<li>强类型语言</li>
+<li>线程模型</li>
+<li>async和await异步编程</li>
+</ul>
+<h3 id="4dart线程模型"><a class="markdownIt-Anchor" href="#4dart线程模型"></a> 4.Dart线程模型</h3>
+<p><img src="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/Dart%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B.png" alt="Dart线程模型"></p>
+<ul>
+<li>当发生了异常没有被捕获时，程序并不会直接退出，只会导致当前的任务执行失败，后续代码不会执行。</li>
+<li>但是它如果crash之后或者异常之后会去执行任务队列当中的下一个任务，这样的话就可以保证每个任务之间是独立的，也就是你一个任务的异常或者崩溃等一些问题，并不会影响到其它任务，可以让每个任务之间相互独立，在一定程度上也提高了我们程序的稳定性。</li>
+</ul>
+<h3 id="5dart线程管理"><a class="markdownIt-Anchor" href="#5dart线程管理"></a> 5.Dart线程管理</h3>
+<p><img src="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/Dart%E7%BA%BF%E7%A8%8B%E7%AE%A1%E7%90%86.png" alt="Dart线程管理"></p>
+<h3 id="6dart异步编程"><a class="markdownIt-Anchor" href="#6dart异步编程"></a> 6.Dart异步编程</h3>
+<ul>
+<li>async-await代码块是对Future API的简化形式，将异步回调代码写成同步代码</li>
+<li>async关键字修饰的函数返回一个Future对象，故<mark>async不会阻塞当前线程</mark></li>
+<li>await关键字会<mark>同步执行</mark>，阻塞当前线程</li>
+</ul>
+<p>Tips：</p>
+<ul>
+<li>要定义异步函数，需要在函数主体之前添加async关键字</li>
+<li>await关键字只有在async关键字修饰的函数才会有效</li>
+</ul>
+<p>eg：</p>
+<p><img src="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E7%BA%BF%E7%A8%8B1.png" alt="线程1"></p>
+<p>​	<img src="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E7%BA%BF%E7%A8%8B2.png" alt="线程2"></p>
+<h3 id="7dart总结"><a class="markdownIt-Anchor" href="#7dart总结"></a> 7.Dart总结</h3>
+<ul>
+<li>符合Flutter声明式UI的布局方式</li>
+<li>线程模型： 微任务队列和事件队列</li>
+<li>线程管理：4个不同的Runner Thread</li>
+<li>async和await异步编程</li>
+</ul>
+<h3 id="8flutter工程结构"><a class="markdownIt-Anchor" href="#8flutter工程结构"></a> 8.Flutter工程结构</h3>
+<ol>
+<li>
+<p>创建工程</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter create flutter_obj</span><br></pre></td></tr></table></figure>
+<p>同时还可以使用IDE来创建。</p>
+</li>
+<li>
+<p>配置文件与依赖管理<img src="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E5%B7%A5%E7%A8%8B%E7%BB%93%E6%9E%84.png" alt="工程结构"></p>
+</li>
+</ol>
+<h3 id="9布局方式及差异"><a class="markdownIt-Anchor" href="#9布局方式及差异"></a> 9.布局方式及差异</h3>
+<ul>
+<li>两种不同的编程范式</li>
+<li>命令式UI：UI界面由一个个命令操作组合而成</li>
+<li>声明式UI：将想要的UI描述出来即可</li>
+</ul>
+<p><img src="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F%E5%8F%8A%E5%B7%AE%E5%BC%82.png" alt="布局方式及差异"></p>
+<p>声明式UI优点：</p>
+<ul>
+<li>更适合做<mark>多设备适配</mark></li>
+<li>UI布局和控制逻辑通过reactive方式<mark>实现数据绑定</mark></li>
+<li>更好实现UI<mark>局部刷新机制</mark>，只刷新更新的部分</li>
+</ul>
+<h3 id="10什么是widget"><a class="markdownIt-Anchor" href="#10什么是widget"></a> 10.什么是Widget？</h3>
+<p><strong>官方解释</strong></p>
+<p>​		<strong>A widget is an <mark>immutable description</mark> of a part of a user interface.</strong></p>
+<p><strong>翻译：</strong></p>
+<p>​		<strong>Widget是部分UI的不可变描述信息</strong></p>
+<p><strong>重点：</strong></p>
+<p>​		<strong><mark>Widget是不可变的！！！</mark></strong></p>
+<p><img src="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/widget.png" alt="widget"></p>
+<p><strong>State更新方式</strong></p>
+<ul>
+<li><strong>通过State.setState()触发重布局</strong></li>
+<li><strong>遍历需要更新的Element，依次调用rebuild</strong></li>
+</ul>
+<p><strong>结论：StatelessWidget和StatefulWidget差别在于<mark>是否能自重建</mark></strong></p>
+<h3 id="11生命周期"><a class="markdownIt-Anchor" href="#11生命周期"></a> 11.生命周期</h3>
+<p><img src="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png" alt="生命周期"></p>
+<h2 id="第二章-开发工具安装及环境搭建"><a class="markdownIt-Anchor" href="#第二章-开发工具安装及环境搭建"></a> 第二章 开发工具安装及环境搭建</h2>
+<h3 id="1常用开发工具"><a class="markdownIt-Anchor" href="#1常用开发工具"></a> 1.常用开发工具</h3>
+<ul>
+<li>VSCode</li>
+<li>XCode</li>
+<li>Android Studio</li>
+</ul>
+<h3 id="2flutter-sdk下载及安装"><a class="markdownIt-Anchor" href="#2flutter-sdk下载及安装"></a> 2.Flutter SDK下载及安装</h3>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="https://flutter.cn/">Flutter官网</a></p>
+</li>
+<li>
+<p><strong>查看全部的版本</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag --list</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>切换版本</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout 2.8.0</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>更新path环境变量</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在用户环境变量中创建一个新的 `Path` 变量，然后将 `flutter\bin` 所在的完整路径作为新变量的值。</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>运行<code>flutter doctor</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor</span><br><span class="line"># 检查你的现有环境，并将检测结果以报告形式呈现出来。仔细阅读它显示的内容，检查是否有尚未安装的软件或是有其他的步骤需要完成（通常会以粗体呈现）。</span><br><span class="line"># 每当您安装了任何一个的依赖项，就可以随时执行 flutter doctor 来检查是否正确配置了所有内容。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3android-studio安装及配置"><a class="markdownIt-Anchor" href="#3android-studio安装及配置"></a> 3.Android Studio安装及配置</h3>
+<ul>
+<li>
+<p>Tips</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Flutter 依赖 Android Studio 的全量安装来为其提供 Android 平台的支持。但你也可以使用其他的编辑器来写 Flutter 应用。</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio">Android Studio官网</a></p>
+</li>
+<li>
+<p>windows下载好安装包后，进行无脑安装</p>
+</li>
+<li>
+<p>安装完成后，点plugins然后安装<code>Flutter</code>和<code>Dart</code>两个插件</p>
+</li>
+<li>
+<p>重启，然后再setting里面搜<code>android sdk</code>看是否安装过一个版本，安装过即不管，未安装则安装一个版本。(最新版本的<code>Android Studio</code>在安装时就需要安装<code>Android SDK</code>)</p>
+</li>
+</ul>
+<h2 id="第三章-flutter实现混合式开发"><a class="markdownIt-Anchor" href="#第三章-flutter实现混合式开发"></a> 第三章 Flutter实现混合式开发</h2>
+<h3 id="1为什么需要混合开发"><a class="markdownIt-Anchor" href="#1为什么需要混合开发"></a> 1.为什么需要混合开发</h3>
+<ul>
+<li>双端功能隔离</li>
+<li>需要原生能力</li>
+<li>现有陈旧原生项目</li>
+</ul>
+<p><strong>Flutter很好的支持了以独立页面，甚至可以通过UI片段的方式集成到现有的应用中，即所谓的<mark>混合开发模式</mark>。</strong></p>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "http://example.com/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/";
+            const title         = "「基于Flutter3.x实战跨平台短视频App混合开发」";
+            const excerpt       = ` 基于Flutter3.x实战跨平台短视频App混合开发
+ 第一章 Flutter整体介绍
+ 1.Flutter技术发展概述
+ 什么是Flutter
+
+由Google研发
+一款应用程序SDK
+一份代码可以同时生成IOS和Android...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    
+                </div>
+                <div class="pull-date">
+                    <time datetime="2023-10-24T04:05:28.222Z" itemprop="dateModified">最后编辑：2023-10-24</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" 个人博客的搭建" href="/2023/10/22/搭建个人博客/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" 解决Hexo无法显示图片的方案" href="/2023/10/23/解决Hexo无法显示图片的方案/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                7
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+
+            
+                
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/27/%E7%A7%BB%E5%8A%A8Web%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/"><i class="fa  fa-book"></i> 移动Web网页开发</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/23/%E8%A7%A3%E5%86%B3Hexo%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E6%A1%88/"><i class="fa  fa-book"></i> 解决Hexo无法显示图片的方案</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/23/%E5%9F%BA%E4%BA%8EFlutter3-x%E5%AE%9E%E6%88%98%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9F%AD%E8%A7%86%E9%A2%91App%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/"><i class="fa  fa-book"></i> 基于Flutter3.x实战跨平台短视频App混合开发</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/22/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"><i class="fa  fa-book"></i> 个人博客的搭建</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/10/22/Hexo%E6%9B%B4%E6%8D%A2MarkDown%E6%B8%B2%E6%9F%93%E5%99%A8/"><i class="fa  fa-book"></i> Hexo更换MarkDown渲染器</a>
+            
+          
+        
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2023 Hexo 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by John Doe.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="3204190542"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
